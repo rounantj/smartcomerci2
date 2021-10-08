@@ -1,0 +1,178 @@
+{
+  "version": 2,
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
+  "defaultProject": "www.smartcommerci.co",
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "styled-components",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "styled-components"
+      },
+      "library": {
+        "style": "styled-components",
+        "linter": "eslint"
+      }
+    }
+  },
+  "projects": {
+    "www.smartcommerci.co": {
+      "root": "apps/www.smartcommerci.co",
+      "sourceRoot": "apps/www.smartcommerci.co/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/www.smartcommerci.co",
+            "index": "apps/www.smartcommerci.co/src/index.html",
+            "main": "apps/www.smartcommerci.co/src/main.tsx",
+            "polyfills": "apps/www.smartcommerci.co/src/polyfills.ts",
+            "tsConfig": "apps/www.smartcommerci.co/tsconfig.app.json",
+            "assets": [
+              "apps/www.smartcommerci.co/src/favicon.ico",
+              "apps/www.smartcommerci.co/src/assets"
+            ],
+            "styles": [],
+            "scripts": [],
+            "webpackConfig": "@nrwl/react/plugins/webpack"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/www.smartcommerci.co/src/environments/environment.ts",
+                  "with": "apps/www.smartcommerci.co/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/web:dev-server",
+          "options": {
+            "buildTarget": "www.smartcommerci.co:build"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "www.smartcommerci.co:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/www.smartcommerci.co/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/www.smartcommerci.co"],
+          "options": {
+            "jestConfig": "apps/www.smartcommerci.co/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "www.smartcommerci.co-e2e": {
+      "root": "apps/www.smartcommerci.co-e2e",
+      "sourceRoot": "apps/www.smartcommerci.co-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/www.smartcommerci.co-e2e/cypress.json",
+            "tsConfig": "apps/www.smartcommerci.co-e2e/tsconfig.e2e.json",
+            "devServerTarget": "www.smartcommerci.co:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "www.smartcommerci.co:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/www.smartcommerci.co-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "www.smartcommerci.co-node-js": {
+      "root": "apps/www.smartcommerci.co-node-js",
+      "sourceRoot": "apps/www.smartcommerci.co-node-js/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/www.smartcommerci.co-node-js",
+            "main": "apps/www.smartcommerci.co-node-js/src/main.js",
+            "tsConfig": "apps/www.smartcommerci.co-node-js/tsconfig.app.json",
+            "assets": ["apps/www.smartcommerci.co-node-js/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/www.smartcommerci.co-node-js/src/environments/environment.js",
+                  "with": "apps/www.smartcommerci.co-node-js/src/environments/environment.prod.js"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "www.smartcommerci.co-node-js:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/www.smartcommerci.co-node-js/**/*.js"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/www.smartcommerci.co-node-js"],
+          "options": {
+            "jestConfig": "apps/www.smartcommerci.co-node-js/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  }
+}

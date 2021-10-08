@@ -1,0 +1,7 @@
+MAIN_SECRET=mdt1234@
+host=52.204.119.95
+port=3306
+user=smartcommerci
+password=GF1gmmd9JBRboeE467PwKhRErs8h
+database=smartcommerci_db
+PORT_APPLICATION=80
