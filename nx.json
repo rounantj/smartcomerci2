@@ -1,0 +1,33 @@
+{
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "smartcommerci",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "www.smartcommerci.co": {
+      "tags": []
+    },
+    "www.smartcommerci.co-e2e": {
+      "tags": [],
+      "implicitDependencies": ["www.smartcommerci.co"]
+    },
+    "www.smartcommerci.co-node-js": {
+      "tags": []
+    }
+  }
+}
