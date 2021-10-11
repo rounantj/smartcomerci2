@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2ac3aa4 (Initial)
+>>>>>>> 9ef3a9d (deploy)
 {
 	"documents": [
 		{
@@ -91,4 +98,105 @@
 			
 		}
 	]
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+{
+	"documents": [
+		{
+			"file": "package.json",
+			"details": "Detalhes, scripts de teste e dependências da aplicação"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/controllers/business.js",
+			"details": "Controles baseados nas regras de negócio"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/controllers/users.js",
+			"details": "Controles de usuario baseados nas regras de negócio"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/controllers/documentation.js",
+			"details": "Controles de exibição da documentação desta aplicação"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/db.js",
+			"details": "Modelo de conexão ao database para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/affiliates.js",
+			"details": "Modelo de dados de afiliados para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/carts.js",
+			"details": "Modelo de dados do carrinho para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/listas_compras.js",
+			"details": "Modelo de dados de listas de compra para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/masters.js",
+			"details": "Modelo de dados de lojas master (matriz principal) para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/orders.js",
+			"details": "Modelo de dados de pedidos para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/posts.js",
+			"details": "Modelo de dados de posts (receitas ou outros) para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/products.js",
+			"details": "Modelo de dados de produtos para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/users_affiliates.js",
+			"details": "Modelo de dados de usuários de filiais para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/users_masters.js",
+			"details": "Modelo de dados de usuários de matrizes (masters) para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/models/users_clients.js",
+			"details": "Modelo de dados de usuários de clientes para uso do sequelize"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/routes/routes.js",
+			"details": "Script que define as rotas da aplicação"
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/main.js",
+			"details": "Script principal que orquestra as rotas, controles, modelos e autenticação de JWT."
+			
+		},
+        {
+			"file": "apps/www.smartcommerci.co-node-js/src/views/documentation.ejs",
+			"details": "View EJS que consome o end-poit da documentação a fim de exibi-la"
+			
+		}
+	]
+>>>>>>> 8aa9bc6 (version commit)
+=======
+>>>>>>> 2ac3aa4 (Initial)
+>>>>>>> 9ef3a9d (deploy)
 }
