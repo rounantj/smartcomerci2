@@ -3,7 +3,7 @@
   "cli": {
     "defaultCollection": "@nrwl/react"
   },
-  "defaultProject": "www.smartcommerci.co",
+  "defaultProject": "www.smartcommerci.co-node-js",
   "generators": {
     "@nrwl/react": {
       "application": {

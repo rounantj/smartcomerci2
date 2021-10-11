@@ -1,3 +1,3 @@
 module.exports = {
-  projects: ['<rootDir>/apps/www.smartcommerci.co'],
+  projects: ['<rootDir>/apps/www.smartcommerci.co-node-js'],
 };
